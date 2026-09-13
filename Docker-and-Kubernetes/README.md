@@ -1,12 +1,13 @@
 # Docker and Kubernetes
 
+
 ## Docker
 
-Docker is used to make development and deployment easier. It allows you to package up code and run on a different machine with the knowledge of all the code and dependencies required to run the code. Docker consists of two main fundamentals: images and containers:
+Docker is used to make development and deployment easier. It allows you to package up code and run on a different machine with the knowledge of all the code and dependencies required to run the code. Docker consists of two main fundamentals: **images** and **containers**:
 
-Images - the instructions on how to execute the code. It includes things like the technologies needed, runtimes and tools/instructions for running the code. They are composed of multiple immutable layers to form the complete image, each of which cannot be changed, only added upon with new layers.
+**Images** - the instructions on how to execute the code. It includes things like the technologies needed, runtimes and tools/instructions for running the code. They are composed of multiple immutable layers to form the complete image, each of which cannot be changed, only added upon with new layers.
 
-Containers - where the code is ran. It is a lightweight, standlone unit that packages the code with the runtime and dependencies so that it can be run in different environments. This ensures if it works on your machine, it will work on all. All containers are isolated and containers work across different operating systems (OS) without any modifications. Unlike virtual machines (VMs) which virtualise the hardware and use the OS, containers virtualise the OS and shares the kernel which allows for quicker startups.
+**Containers** - where the code is ran. It is a lightweight, standlone unit that packages the code with the runtime and dependencies so that it can be run in different environments. This ensures if it works on your machine, it will work on all. All containers are isolated and containers work across different operating systems (OS) without any modifications. Unlike virtual machines (VMs) which virtualise the hardware and use the OS, containers virtualise the OS and shares the kernel which allows for quicker startups.
 
 ### Dockerfile
 Contains the instructions to run the code and container. You should import the base image (typically operating systems or language runtimes e.g. node:24, ubuntu:latest).
@@ -29,9 +30,11 @@ A nice docker tool which can be used in docker desktop or via the terminal to he
 ### Examples CMD Lines:
 
 Build the Image
+
 `docker build -t docker_image_tag ./path-to-dockerfile`
 
 Running the Container
+
 `docker run -p computer_port:container_port docker_image_tag`
 
 ### Docker Compose and Volumes
@@ -40,14 +43,22 @@ When creating a project, you want to separate the different components into diff
 To do so, you need a `compose.yaml` file. This file contains a list of the services in the application. In here will link to the dockerfile of the main container and then some instructions such as the base image and any ports/environment variables for extra containers.
 
 To start and stop all containers in a docker compose, you simply run:
+
 `docker compose up`
+
 `docker compose down`
 
 ### Docker Build Cloud
 This is used for larger projects which may take longer to upload to docker every time. It can improve upload speeds by up to 39x and allows for sharing with others and sharing cache states.
 
 
-## Resources
-The Only Docker Tutorial You Need To Get Started - https://www.youtube.com/watch?v=DQdB7wFEygo
-Docker Resources - https://www.docker.com/resources/
-
+## Resources and References
+<a href="https://www.youtube.com/watch?v=DQdB7wFEygo">
+  <img src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/youtube.svg" width="30" height="30" alt="YouTube" align="top">
+  The Only Docker Tutorial You Need To Get Started
+</a>
+<br>
+<a href="https://www.docker.com/resources/">
+  <img src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/docker.svg" width="30" height="30" alt="YouTube" align="top">
+  Docker Resources
+</a>
