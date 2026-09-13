@@ -10,21 +10,7 @@ This repository is intended to be a practical reference for understanding how th
 
 ## 📚 Contents
 
-* [Programming](#-programming)
-* [Data Structures & Algorithms](#-data-structures--algorithms)
-* [Software Engineering](#-software-engineering)
-* [Web Development](#-web-development)
-* [Databases](#-databases)
-* [Operating Systems](#-operating-systems)
-* [Networking](#-networking)
-* [Cloud & DevOps](#-cloud--devops)
-* [Containers & Orchestration](#-containers--orchestration)
-* [Artificial Intelligence & Machine Learning](#-artificial-intelligence--machine-learning)
-* [Cybersecurity](#-cybersecurity)
-* [Distributed Systems](#-distributed-systems)
-* [Systems & Architecture](#-systems--architecture)
-* [Developer Tools](#-developer-tools)
-* [Resources](#-resources)
+* [Containers & Orchestration](#Containers-and-Orchestration)
 
 
 ## 🎯 Goals
